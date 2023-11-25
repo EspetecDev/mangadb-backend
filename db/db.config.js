@@ -1,7 +1,7 @@
 
 
 const cfg = {
-    db_url: 'mongodb+srv://espetec:fJrWt8NkNyTHDNrQ@cluster0.xy74geq.mongodb.net/?retryWrites=true&w=majority'
+    db_url: ''
 }
 
 module.exports.cfg = cfg;
