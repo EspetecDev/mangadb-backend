@@ -1,9 +1,11 @@
 # mangadb-backend
 
 current schemas || routes and controllers done
-- Authors: get_all, get_id, insert
+- Authors:
 - Series
 - Volumes
+- Admin
+    - users
 
 TODO: 
     - get more data from scrapper
