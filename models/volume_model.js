@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const volume_schema = mongoose.Schema(
     {
-        title: { type: String, required: true },
+        title: { type: String, required: true, unique: true },
         description: { type: String },
         number_in_series: { type: Number, required: true },
         cover: { type: String },

@@ -4,6 +4,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors');
 const {db} = require('./db/db');
 const { routers } = require('./routes/routes');
 
@@ -19,8 +20,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* Routes */
+// Routes
 routers.forEach( r => app.use(r.route, r.router));
+
+// CORS
+app.use(
+  cors({
+    origin: ['http://localhost:'+process.env.PORT??'3000'],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+  })
+);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

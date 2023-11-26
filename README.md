@@ -8,6 +8,11 @@ current schemas || routes and controllers done
     - users
 
 TODO: 
-    - get more data from scrapper
-    - get sample of x50 mangas and automatize db data entry
-    - create admin frontend
+    - [X] ~~*enable cors / authentication token*~~ [2023-11-26]
+    - [ ] create admin frontend
+    - [ ] get more data from scrapper
+    - [ ] get sample of x50 mangas and automatize db data entry
+
+authentication:
+    - [X] ~~*save user password hashed with bcrypt --> CURRENT check user creation*~~ [2023-11-26]
+    
