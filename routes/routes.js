@@ -8,7 +8,7 @@ const {series_router} = require('../routes/series');
 const {volumes_router} = require('../routes/volumes');
 
 const routers = [
-        {route: '/', router: user_verification},
+        // {route: '/', router: user_verification},
         {route: '/admin', router: admin_router},
         {route: '/authors', router: authors_router},
         {route: '/series', router: series_router},
